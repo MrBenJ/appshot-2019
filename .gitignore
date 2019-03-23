@@ -1,0 +1,15 @@
+# node
+node_modules
+
+# dist folder
+dist
+
+# Code coverage
+coverage
+
+# macOS
+.DS_Store
+
+#.env
+.env*
+

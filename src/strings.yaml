@@ -1,0 +1,26 @@
+# Strings file
+#
+# This holds all of the applications strings
+#
+# First level is the 2 letter language code that's <I18nProvider> keeps inside
+# of its internal state (I18nProvider.state.language)
+#
+# Everything else after the first level is accessed through dot notation:
+# ('Header.Hello')
+#
+# Take a look at @components/I18nProvider to see how this works under the hood
+#
+
+# American English
+en:
+  # Desktop Header
+  Header:
+    Hello: Hello
+  Footer:
+    Bye: See you later
+# Spanish
+es:
+  Header:
+    Hello: Hola
+  Footer:
+    Bye: Hasta luego

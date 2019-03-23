@@ -1,0 +1,28 @@
+[ignore]
+# Lovingly borrowed from: https://github.com/facebook/flow/issues/1420
+# Also, happens with just the react-styleguidist tool/package
+.*/node_modules/.*/\(lib\|test\).*\.json$
+
+[include]
+
+[libs]
+flow-typed
+
+[lints]
+
+[options]
+# WEBPACK ALIASES
+module.name_mapper='@src' -> '<PROJECT_ROOT>/src'
+module.name_mapper='@actions' -> '<PROJECT_ROOT>/src/actions'
+module.name_mapper='@constants' -> '<PROJECT_ROOT>/src/constants'
+module.name_mapper='@components' -> '<PROJECT_ROOT>/src/components'
+module.name_mapper='@pages' -> '<PROJECT_ROOT>/src/pages'
+module.name_mapper='@reducers' -> '<PROJECT_ROOT>/src/reducers'
+module.name_mapper='@sagas' -> '<PROJECT_ROOT>/src/sagas'
+module.name_mapper='@static' -> '<PROJECT_ROOT>/src/static'
+module.name_mapper='@utils' -> '<PROJECT_ROOT>/src/utils'
+
+module.name_mapper.extension='yaml' -> '<PROJECT_ROOT>/src/stubs'
+esproposal.optional_chaining=enable
+
+[strict]

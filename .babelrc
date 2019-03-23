@@ -1,0 +1,20 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry"
+      }
+    ],
+    "@babel/preset-react",
+    "@babel/preset-flow",
+    "@emotion/babel-preset-css-prop"
+  ],
+  "plugins": [
+    ["emotion", { "sourceMap": true }],
+    "react-hot-loader/babel",
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-optional-chaining"
+  ]
+}
