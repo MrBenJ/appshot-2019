@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 const path = require('path');
 const webpack = require('webpack');
 const PrintQRCodePlugin = require('webpack-dev-server-qr-code');
@@ -47,14 +46,7 @@ module.exports = {
     // This option allows us to use ngrok to have others tunnel into the system
     disableHostCheck: true,
     contentBase: './dist',
-    historyApiFallback: true,
-    proxy: {
-      '/current_user.json': {
-        changeOrigin: true,
-        pathRewrite: { '^/current_user.json': '' },
-        target: `${process.env.WEBLINC_URL}/current_user.json`
-      }
-    }
+    historyApiFallback: true
   },
   module: {
     rules: [
