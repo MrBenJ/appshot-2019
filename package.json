@@ -34,7 +34,7 @@
     "@babel/polyfill": "^7.2.5",
     "@emotion/babel-preset-css-prop": "^10.0.7",
     "@emotion/core": "^10.0.7",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-plugin-emotion": "^10.0.7",
     "classnames": "^2.2.6",
     "core-js": "^2.6.4",
